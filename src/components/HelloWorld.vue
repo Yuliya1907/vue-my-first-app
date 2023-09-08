@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   
-    <h1 class="green">Header</h1>
+    <h1 class="green">ТВІЙLIFE</h1>
     
 </template>
 
