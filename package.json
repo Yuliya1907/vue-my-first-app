@@ -1,0 +1,19 @@
+{
+  "name": "vue-my-first-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "deploy": "deploy.sh",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "sass": "^1.66.1",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.1",
+    "vite": "^4.4.9"
+  }
+}

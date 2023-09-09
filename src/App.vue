@@ -1,6 +1,8 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import Header from './components/Header.vue'
+import Header from './components/Header.vue' 
+import ArticleCard from './components/ArticleCard.vue' 
+import FoodSection from './components/FoodSection.vue' 
 </script>
 
 <template>
@@ -10,11 +12,21 @@ import Header from './components/Header.vue'
     <div class="wrapper">
      
       <HelloWorld msg="You did it!" />
+      <Header />
     </div>
   </header>
 
   <main>
-    <Header />
+    <div class="article__container"> 
+      <ArticleCard /> 
+      <ArticleCard /> 
+      <ArticleCard /> 
+      <ArticleCard /> 
+      <ArticleCard /> 
+      <ArticleCard /> 
+    </div>
+    <FoodSection />
+     
   </main>
 </template>
 
@@ -44,5 +56,13 @@ header {
     place-items: flex-start;
     flex-wrap: wrap;
   }
+}
+
+.article__container {
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 </style>
