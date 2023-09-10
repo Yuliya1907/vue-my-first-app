@@ -30,7 +30,7 @@
 
 <style scoped>
 .footer {
-  width: 100%;
+  /* width: 100%; */
   padding: 20px;
   background-color: rgb(206, 201, 201);
   display: flex;

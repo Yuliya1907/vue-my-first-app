@@ -1,58 +1,25 @@
+<!-- <script setup>
+import Burger from './Burger.vue' -->
+<!-- </script> -->
+
+
 <template>
     <div class="header__container">
         <h1 class="logo">ТВІЙLIFE.</h1>
-    <div>
-      <ul role="menu">
-        <li>
-          <div class="dropdown">
-            <div>Здоров'я</div>
-              <div class="dropdown-content">
-                <a href="#">Здоров'я</a>
-                <a href="#">Здоров'я</a>
-                <a href="#">Здоров'я</a>
-              </div>
-            </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <div>Дім і побут</div>
-              <div class="dropdown-content">
-                <a href="#">Дім і побут</a>
-                <a href="#">Дім і побут</a>
-                <a href="#">Дім і побут</a>
-              </div>
-            </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <div>Харчування</div>
-              <div class="dropdown-content">
-                <a href="#">Харчування</a>
-                <a href="#">Харчування</a>
-                <a href="#">Харчування</a>
-              </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <div>Спорт</div>
-              <div class="dropdown-content">
-                <a href="#">Спорт</a>
-                <a href="#">Спорт</a>
-                <a href="#">Спорт</a>
-              </div>
-          </div>
-        </li>
-    </ul>
-    </div>
+        <!-- <Burger /> -->
+
+   git 
     </div>
     
     
 </template>
 
 <style scoped>
+.header__container {
+  width: 100%;
+}
 ul {
-    width: 1440px;
+    width: 100%;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -109,5 +76,11 @@ li {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.arrow-down::after {
+  content: "\25BC"; /* Символ стрілки вниз */
+  font-size: 12px;
+  margin-left: 5px;
 }
 </style>
