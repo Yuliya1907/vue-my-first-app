@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 .food__article {
     display: flex;
@@ -39,7 +40,7 @@
     margin:0 30px 30px 0;
 }
     .food__article--1 {
-        background-image: url(./../assets/images/food1.jpg);
+        background-image: url(./public/assets/images/food1.jpg);
     }
 
     .food__article--2 {

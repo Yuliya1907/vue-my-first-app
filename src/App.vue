@@ -1,33 +1,35 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue' 
 import ArticleCard from './components/ArticleCard.vue' 
 import FoodSection from './components/FoodSection.vue' 
+import Slider from './components/Slider.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
-  <header>
- 
-
-    <div class="wrapper">
-     
-      <HelloWorld msg="You did it!" />
-      <Header />
-    </div>
-  </header>
+  
 
   <main>
+    <header>
+ 
+ <Header />
+</header>
     <div class="article__container"> 
-      <ArticleCard /> 
-      <ArticleCard /> 
-      <ArticleCard /> 
-      <ArticleCard /> 
-      <ArticleCard /> 
+      <Slider />
+    </div>
+    <div class="article__container"> 
       <ArticleCard /> 
     </div>
     <FoodSection />
-     
+    <div class="article__container"> 
+      <ArticleCard /> 
+    </div>
+    
+    <footer>
+    <Footer />
+  </footer>
   </main>
+  
 </template>
 
 <style scoped>
