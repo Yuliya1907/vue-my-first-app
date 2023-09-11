@@ -113,7 +113,7 @@
 }
 
 .food__article--1 {
-    background-image: url(./public/assets/images/food1.jpg);
+    background-image: url(./../assets/images/food1.jpg);
 }
 
 .food__article--2 {
