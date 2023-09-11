@@ -22,10 +22,10 @@
     data() {
       return {
         images: [
-           'public/assets/images/food1.jpg',
-           'public/assets/images/food2.png' ,
-           'public/assets/images/food3.jpg' ,
-           'public/assets/images/food4.jpg' ,
+           'assets/images/food1.jpg',
+           'assets/images/food2.png' ,
+           'assets/images/food3.jpg' ,
+           'assets/images/food4.jpg' ,
         ],
       };
     },
@@ -69,11 +69,13 @@
     height: 550px;
     position: relative;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   .swiper-container {
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
 
   .slide-image {

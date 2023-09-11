@@ -22,13 +22,13 @@ export default {
       articles: [
         {
           id: 4,
-          image: 'public/assets/images/family.jpg',
+          image: 'assets/images/family.jpg',
           caption: 'Caption 4',
           text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         },
         {
           id: 4,
-          image: 'public/assets/images/family.jpg',
+          image: 'assets/images/family.jpg',
           caption: 'Caption 4',
           text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         },

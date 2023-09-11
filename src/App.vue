@@ -10,9 +10,9 @@ import Footer from './components/Footer.vue'
   
 
   <main class="main__container">
-    <header>
+
       <Header />
-    </header>
+  
     <SliderBlock />
     
     <div class="article__container"> 
@@ -23,9 +23,9 @@ import Footer from './components/Footer.vue'
       <ArticleCard /> 
     </div>
     
-    <footer>
+    
       <Footer />
-    </footer>
+  
   </main>
   
 </template>
@@ -33,6 +33,7 @@ import Footer from './components/Footer.vue'
 
 <style scoped>
 .main__container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
