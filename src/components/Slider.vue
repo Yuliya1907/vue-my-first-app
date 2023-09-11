@@ -22,10 +22,10 @@
     data() {
       return {
         images: [
-           './../assets/images/food1.jpg',
-           './../assets/images/food2.png' ,
-           './../assets/images/food3.jpg' ,
-           './../assets/images/food4.jpg' ,
+           'public/assets/images/food1.jpg',
+           'public/assets/images/food2.png' ,
+           'public/assets/images/food3.jpg' ,
+           'public/assets/images/food4.jpg' ,
         ],
       };
     },
