@@ -30,14 +30,29 @@
       };
     },
     mounted() {
-    // Ініціалізуйте Swiper після того, як компонент буде вставлений у DOM
     new Swiper('.swiper-container', {
-      slidesPerView: 1, // Кількість відображуваних слайдів одночасно
-      spaceBetween: 20, // Відстань між слайдами
+      slidesPerView: 1,
+      spaceBetween: 20,
       pagination: {
-        el: '.swiper-pagination', // Селектор для дотів
-        clickable: true, // Зробити доти клікабельними
+        el: '.swiper-pagination',
+        clickable: true,
       },
+    });
+    swiper.on('slideChange', () => {
+      const slides = document.querySelectorAll('.swiper-slide');
+
+      slides.forEach((slide, index) => {
+        if (index === swiper.activeIndex) {
+          slide.classList.remove('swiper-slide-prev', 'swiper-slide-next');
+          slide.classList.add('swiper-slide-active');
+        } else if (index < swiper.activeIndex) {
+          slide.classList.remove('swiper-slide-next', 'swiper-slide-active');
+          slide.classList.add('swiper-slide-prev');
+        } else {
+          slide.classList.remove('swiper-slide-prev', 'swiper-slide-active');
+          slide.classList.add('swiper-slide-next');
+        }
+      });
     });
   },
 };
@@ -47,15 +62,13 @@
   
   
   <style scoped>
-  /* Стилі для вашого слайдера тут */
-  
-  /* Задайте розміри слайдера */
+
   .slider-container {
-    width: 870px;
+    max-width: 920px;
+    width: 100%;
     height: 550px;
     position: relative;
-  
-    /* Додайте інші стилі за вашими потребами, наприклад, фон, рамку і так далі */
+    margin: 0 auto;
   }
 
   .swiper-container {
@@ -64,20 +77,20 @@
   }
 
   .slide-image {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat; 
 }
 
-.swiper-slide-next .slide-image {
-  visibility: hidden;
-}
+ .swiper-slide-next .slide-image {
+   visibility: hidden;
+ }
 
-.swiper-slide-prev .slide-image {
+ .swiper-slide-prev .slide-image {
   visibility: hidden;
-}
+ }
   
   .swiper-pagination {
     display: flex;
@@ -86,6 +99,12 @@
     justify-content: flex-end;
   }
   
- 
+  @media (max-width: 1440px) {
+  .slider-container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
   </style>
   

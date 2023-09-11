@@ -1,28 +1,25 @@
-@import './base.css';
+ @import './base.css';
+ @import './../utils/_variables.scss';
+ @import './../utils/_reset.scss';
+ @import './../utils/_mixins.scss';
+ @import './../utils/_normalize.scss';
 
 #app {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
-  /* padding: 2rem; */
-
-  font-weight: normal;
-}
+  font-weight: normal; 
+} 
 
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   body {
     display: flex;
+    justify-content: center;
   }
 
   #app {
-    /* display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem; */
+    padding: 0 2rem;
   }
-}
+ } 

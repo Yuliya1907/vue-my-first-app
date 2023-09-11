@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <article v-for="article in articles" :key="article.id">
-      <img class="article__image" :src="article.image" :alt="article.image">
+        <img class="article__image" :src="article.image" :alt="article.image">
       <h3 class="article__caption">{{ article.caption }}</h3>
       <p>{{ article.text }}</p>
     </article>
@@ -68,16 +68,45 @@ export default {
 </script>
 
 <style scoped>
-.container {
+ .container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
 }
-article {
-  width: 300px;
-  margin-bottom: 30px;
 
+article {
+  max-width: 360px; 
+  height: 300px;
+  margin-bottom: 30px;
 }
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  article {
+    width: calc(50% - 20px);
+    height: auto;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  article {
+    width: calc(25% - 20px); 
+    /* height: auto; */
+    margin-right: 20px;
+  }
+}
+
+
 .article__caption {
   font-weight: 700;
 }
@@ -85,5 +114,13 @@ article {
 .article__image {
   width: 90%;
   height: 70%;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
 }
+
+.article__image:hover {
+  transform: scale(1.05);
+}
+
+
 </style>

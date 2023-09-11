@@ -30,7 +30,7 @@
 
 <style scoped>
 .footer {
-  /* width: 100%; */
+  width: 100%;
   padding: 20px;
   background-color: rgb(206, 201, 201);
   display: flex;
@@ -38,9 +38,17 @@
 }
 .container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+  }
 }
 
 .logo {
@@ -57,6 +65,7 @@ h3 {
 .btn {
   width: 200px;
   height: 30px;
+  margin: 0 auto;
   background-color: rgb(211, 235, 166);
   display: flex;
   align-items: center;
@@ -79,5 +88,10 @@ h3 {
 
 h3 {
     margin: 10px auto;
+}
+
+p:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 </style>
