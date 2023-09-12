@@ -84,12 +84,12 @@ article {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   article {
     width: calc(50% - 20px);
     height: auto;
-    margin-right: 20px;
   }
 }
 

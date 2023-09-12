@@ -9,17 +9,3 @@
   margin: 0 auto;
   font-weight: normal; 
 } 
-
-
-@media (min-width: 768px) {
-  body {
-    display: flex;
-    justify-content: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
- } 
